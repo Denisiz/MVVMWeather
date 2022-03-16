@@ -9,4 +9,9 @@ import Foundation
 
 ///Данные для представления
 
-class Weather
+class WeatherViewModel: ObservableObject {
+    @Published var title: String = ""
+    @Published var descriptionText: String = ""
+    @Published var temp: String = ""
+    @Published var timezone: String = ""
+}
